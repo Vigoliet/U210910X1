@@ -1,0 +1,18 @@
+
+						DOMÄNER
+-------------------------------------------------------------------
+Skapa ny kund (användaren ska kunna mata in uppgifter om en ny kund)
+Visa hur många kunder som finns i systemet
+Visa en lista över alla kunderna
+
+Begränsa antalet egenskaper för en Kund, vi övar bara så säg ca 3 egenskaper 
+(du får givetvis skriva fler, gör det gärna i kladdpappret, men implementer/koda endast 3 st)
+Fundera över gränssnittet, hur kan du låta programmet hantera att jag vill göra något
+av de tre funktionerna? Någon typ av enkel meny (1-Skapa ny kund, 2-Visa antal kunder,
+3-Visa lista över alla kunder, 4-Avsluta)
+-------------------------------------------------------------------
+
+-Kund: Namn? Address? Telefonnummer?
+
+
+
