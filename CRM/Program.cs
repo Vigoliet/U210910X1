@@ -52,6 +52,10 @@ namespace CRM
                 {
                     break;
                 }
+                else
+                {
+                    Console.WriteLine("Skriv in rätt siffra, är du Kevin eller?");
+                }
             }
                
         }
