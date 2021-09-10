@@ -9,9 +9,8 @@ namespace CRM
         {
             Console.WriteLine("Hello World!");
 
-            Customer myCustomer; //vi berättar att vi från stack tänker använda ett customer objekt
-            myCustomer = new Customer(); //här hamnar ett unikt objekt i minnet (Heap)
-
+           
+            List<Customer> myCustomer = new List<Customer>();
 
 
             //skapa en meny 1-Skapa ny kund, 2-Visa antal kunder, 3-Visa lista över alla kunder, 4-Avsluta
@@ -27,7 +26,16 @@ namespace CRM
 
                 if (word == "1") 
                 {
-                 
+                    Console.WriteLine("Skriv namn:"); 
+                    string name = Console.ReadLine();
+
+                    Console.WriteLine("Skriv address:");
+                    string address = Console.ReadLine();
+
+                    Console.WriteLine("Skriv ålder:");
+                    string age = Console.ReadLine();
+                    myCustomer.Add(new Customer() { Name = name, Address = address, Age = age });
+
                 }
                 if (word == "2") 
                 {
@@ -50,5 +58,5 @@ public class Customer                   // är nu en datatyp
 {
     public string Name { get; set; }    //Namn på kund
     public string Address { get; set; } //Adress på kund
-    public int Age { get; set; }        // Ålder på kund
+    public string Age { get; set; }     // Ålder på kund
 }
