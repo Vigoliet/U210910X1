@@ -39,7 +39,7 @@ namespace CRM
                 }
                 if (word == "2") 
                 {
-
+                    Console.WriteLine($"Så här många kunder existerar på Vigelatus bilfirma: {myCustomer.Count}");
                 }
                 if (word == "3")
                 {
