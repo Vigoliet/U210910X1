@@ -39,11 +39,14 @@ namespace CRM
                 }
                 if (word == "2") 
                 {
-                    Console.WriteLine($"Så här många kunder existerar på Vigelatus bilfirma: {myCustomer.Count}");
+                    Console.WriteLine($"Så här många kunder existerar på Viggelatus bilfirma: {myCustomer.Count}");
                 }
                 if (word == "3")
                 {
-
+                    foreach (Customer c in myCustomer)
+                    {
+                        Console.WriteLine($"{c.Name} {c.Address} {c.Age}");
+                    }
                 }
                 if (word == "4")
                 {
